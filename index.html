@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Color Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="color-tool-wrapper">
+
+            <h1 class="title">Color Lighten/Darken</h1>
+
+            <div class="color-tool">
+
+                <div class="form-control form-control-hex flow">
+                    <label for="hexInput">Color (Hex)</label>
+                    <input type="text" class="hex" name="hex" id="hexInput" placeholder="#000000">
+                </div><!-- end form-control -->
+
+                <div class="form-control form-control-slide flow">
+                    <label for="slider">0%</label>
+                    <input type="range" min="0" max="100" value="0" class="slider" id="slider">
+                </div><!-- end form-control -->
+
+                <div class="color-wrapper input-color-wrapper flow">
+                    <p>Input Color</p>
+                    <div id="inputColor" class="box"></div>
+                </div><!-- end input-color-wrapper -->
+
+                <div class="color-wrapper altered-color-wrapper flow">
+                    <p>Altered Color</p>
+                    <div id="alteredColor" class="box"></div>
+                </div><!-- end altered-color-wrapper -->
+            </div><!-- end color-tool -->
+
+        </div><!-- end color-tool-wrapper -->
+    </main>
+</body>
+</html>
