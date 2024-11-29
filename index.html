@@ -7,36 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-    <main>
-        <div class="color-tool-wrapper">
-
+    <body>
+     
+        <div class="container">
             <h1 class="title">Color Lighten/Darken</h1>
-
-            <div class="color-tool">
-
-                <div class="form-control form-control-hex flow">
-                    <label for="hexInput">Color (Hex)</label>
-                    <input type="text" class="hex" name="hex" id="hexInput" placeholder="#000000">
-                </div><!-- end form-control -->
-
-                <div class="form-control form-control-slide flow">
-                    <label for="slider">0%</label>
-                    <input type="range" min="0" max="100" value="0" class="slider" id="slider">
-                </div><!-- end form-control -->
-
-                <div class="color-wrapper input-color-wrapper flow">
-                    <p>Input Color</p>
-                    <div id="inputColor" class="box"></div>
-                </div><!-- end input-color-wrapper -->
-
-                <div class="color-wrapper altered-color-wrapper flow">
-                    <p>Altered Color</p>
-                    <div id="alteredColor" class="box"></div>
-                </div><!-- end altered-color-wrapper -->
-            </div><!-- end color-tool -->
-
-        </div><!-- end color-tool-wrapper -->
-    </main>
-</body>
+            
+            <label for="hex">Color (Hex)</label>
+            <input type="text" name="hex" id="hexInput" 
+            placeholder="#000000" value="#c6d5ac"/>
+            
+            <div class="toggle">
+                <p id="lightenText" 
+                class="toggle-text">Lighten</p>
+                <div id="toggleBtn" class="toggle-btn">
+                    <div class="inner-circle"></div>
+                </div>
+                <p id="darkenText" 
+                class="toggle-text unselected">Darken</p>
+            </div>
+            
+            <label for="slider" id="sliderText">0%</label>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider" name="slider">
+            <p>Input Color</p>
+            <div id="inputColor" class="box"></div>
+            <p id="alteredColorText">Altered Color</p>
+            <div id="alteredColor" class="box"></div>
+        </div>
+        
+        <script src="index.pack.js"></script>
+    </body>
 </html>
